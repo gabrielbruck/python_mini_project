@@ -3,7 +3,7 @@ import csv
 
 class User:
 
-    def __init__(self):
+    def inputAuth(self):
         self.name = str(input("Please enter your username:"))
         self.password = str(input("Please enter your password:"))
 
@@ -15,7 +15,7 @@ class User:
                 user_role = ' '
 
                 for row in csv_reader:
-                    if name == row[1] and password == row[3]:
+                    if name.lower() == row[1] and password == row[3]:
                             access = True
                             user_role = str(row[6])
 
@@ -32,7 +32,7 @@ class User:
             print("There is an error :" + str(error))
 
 
-User.__init__(User)
+User.inputAuth(User)
 User.user_auth(User.name, User.password)
 
 
