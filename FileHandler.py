@@ -16,4 +16,4 @@ class File_handler:
 
 
 file = File_handler()
-file.load_from_csv("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv")
+file.load_from_csv("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/Vehicle.csv")
