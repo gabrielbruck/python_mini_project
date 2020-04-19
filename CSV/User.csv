@@ -11,4 +11,6 @@ user_id,first,last,password,position,salary,role
 10,Emma,Englard,html,teacher,1500,teacher
 11,Elie,Hafez,decorators,teacher,3000,teacher
 12,Maxim,Suchecky,quarantine,student,200,teacher
-13,Irina,Mizrahi,covid,student,20,teacher
+13,Irina,Mizrahi,covid,student,20,teacher14,Tom,Knecht,password,student,100,teacher
+
+14,Tom,Knecht,password,student,100,teacher

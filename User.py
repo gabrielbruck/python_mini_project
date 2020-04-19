@@ -15,7 +15,7 @@ class User:
                 user_role = ' '
 
                 for row in csv_reader:
-                    if name.lower() == row[1] and password == row[3]:
+                    if name == row[1] and password == row[3]:
                             access = True
                             user_role = str(row[6])
 
