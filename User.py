@@ -5,22 +5,19 @@ from FileHandler import File_handler
 class User:
 
     def __init__(self):
-        self.handler = File_handler
-        # self.name = str(input("Please enter your username:"))
-        # self.password = str(input("Please enter your password:"))
+        self.handler = File_handler()
 
     def user_auth(self, name, password):
         try:
-            self.handler.load_from_csv(self.handler, '/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv')
-            print(self.handler.list)
+            self.handler.load_from_csv('/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv')
 
             access = False
             user_role = ' '
 
             for row in self.handler.list:
-                if name == row[1] and password == row[3]:
+                if name == row['first'] and password == row['password']:
                     access = True
-                    user_role = str(row[6])
+                    user_role = str(row['role'])
 
                 if access:
                     print('Access Granted')
