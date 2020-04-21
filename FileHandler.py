@@ -33,9 +33,33 @@ class File_handler:
         except Exception as error:
             print("There is an error :" + str(error))
 
+    def remove_from_csv(self, file_name, id):
+        try:
 
+            f = open(file_name, 'r+')
+            file_content = list(csv.reader(f))
+            counter = 0
+
+            for row in file_content:
+                if row[0] == id:
+                    file_content.remove(row)
+                    counter += 1
+
+                with open(file_name, 'w') as f:
+                    writer = csv.writer(f)
+                    writer.writerows(file_content)
+
+            if counter == 0:
+                print('No ID found')
+
+        except Exception as error:
+            print("There is an error :" + str(error))
+
+
+#
 # data_input = ['22', 'Tom', 'Knecht', 'password', 'student', 100, 'teacher']
 #
-# file = File_handler()
+file = File_handler()
 # file.append_to_csv("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv", data_input)
 # file.load_from_csv("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv")
+file.remove_from_csv("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv", '11')

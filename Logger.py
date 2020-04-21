@@ -1,6 +1,7 @@
 import os
 import datetime
 
+
 class Logger:
 
         def __init__(self, path_to_log_file, log_file_name):
@@ -21,8 +22,8 @@ class Logger:
                     f.open(self.full_path,"w")
                 else:
                     print("error:", e.strerror)
-            except Exception as e:
-                print("Error: Uknown error occured.")
+            except Exception:
+                print("Error: Unknown error occured.")
             else:
                 date = datetime.datetime.now()
                 try:

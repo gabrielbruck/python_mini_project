@@ -8,12 +8,4 @@ user_id,first,last,password,position,salary,role
 7,Sara,Bador,python,student,200,teacher
 8,Anna,Saig,javascript,student,10,teacher
 9,Itzik,Suissa,css,student,100,teacher
-10,Emma,Englard,html,teacher,1500,teacher
-11,Elie,Hafez,decorators,teacher,3000,teacher
-12,Maxim,Suchecky,quarantine,student,200,teacher
-13,Irina,Mizrahi,covid,student,20,teacher
-15,Tom,Knecht,password,student,100,teacher
-14,Tom,Knecht,password,student,100,teacher
-19,Tom,Knecht,password,student,100,teacher
-20,Tom,Knecht,password,student,100,teacher
 22,Tom,Knecht,password,student,100,teacher
