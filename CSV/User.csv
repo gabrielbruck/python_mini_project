@@ -1,6 +1,5 @@
 user_id,first,last,password,position,salary,role
 1,Amir,bernstein,12345678,teacher,100,teacher
-2,Hen,biton,password,admin,1000,admin
 3,Ghidon,Pan,israel,student,200,teacher
 4,Ben,Mizrahi,snake,teacher,500,teacher
 5,David,Benayoun,itc,teacher,650,teacher
@@ -8,3 +7,4 @@ user_id,first,last,password,position,salary,role
 7,Sara,Bador,python,student,200,teacher
 14,Ben,Berg,password,student,100,teacher
 8,Ben,Berg,password,student,100,teacher
+2,Hen,biton,password,admin,1500,admin

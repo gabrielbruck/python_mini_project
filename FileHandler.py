@@ -1,5 +1,5 @@
 import csv
-from csv import writer
+from csv import DictWriter
 
 
 class File_handler:
@@ -25,12 +25,13 @@ class File_handler:
     def append_to_csv(self, data):
         try:
             for row in self.data:
-                if row.get("user_id") == data[0]:
+                if row.get("user_id") == data.get('user_id'):
                     raise Exception("This ID already exists")
 
             with open(self.file_name, 'a+', newline='') as write_obj:
-                csv_writer = writer(write_obj)
-                csv_writer.writerow(data)
+                dict_writer = DictWriter(write_obj, fieldnames=data)
+                dict_writer.writerow(data)
+
 
         except Exception as error:
             print("There is an error :" + str(error))
@@ -79,7 +80,8 @@ class File_handler:
             print(e)
 
 
-# data_input = ['8', 'Ben', 'Berg', 'password', 'student', 100, 'teacher']
+data_input = {'user_id': '10', 'first': 'Hen', 'last': 'Berg', 'password': 'password', 'position': 'admin',
+              'salary': '100', 'role': 'teacher'}
 #
 file = File_handler("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv")
 # file.append_to_csv(data_input)
