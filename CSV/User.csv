@@ -6,6 +6,5 @@ user_id,first,last,password,position,salary,role
 5,David,Benayoun,itc,teacher,650,teacher
 6,Dennis,Goldberg,generator,teacher,2000,teacher
 7,Sara,Bador,python,student,200,teacher
-8,Anna,Saig,javascript,student,10,teacher
-9,Itzik,Suissa,css,student,100,teacher
-22,Tom,Knecht,password,student,100,teacher
+14,Ben,Berg,password,student,100,teacher
+8,Ben,Berg,password,student,100,teacher

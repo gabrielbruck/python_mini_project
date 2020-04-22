@@ -10,11 +10,10 @@ class User:
     def user_auth(self, name, password):
         try:
             self.handler.load_from_csv('/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv')
-
             access = False
             user_role = ' '
 
-            for row in self.handler.list:
+            for row in self.handler.data:
                 if name == row['first'] and password == row['password']:
                     access = True
                     user_role = str(row['role'])
