@@ -80,10 +80,10 @@ class File_handler:
             print(e)
 
 
-data_input = {'user_id': '10', 'first': 'Hen', 'last': 'Berg', 'password': 'password', 'position': 'admin',
-              'salary': '100', 'role': 'teacher'}
+# data_input = {'user_id': '10', 'first': 'Hen', 'last': 'Berg', 'password': 'password', 'position': 'admin',
+#               'salary': '100', 'role': 'teacher'}
 #
-file = File_handler("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv")
+# file = File_handler("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv")
 # file.append_to_csv(data_input)
 # file.load_from_csv("/Users/gabrielbruck/Desktop/Python_mini_project/CSV/User.csv")
 # file.remove_from_csv('15')
